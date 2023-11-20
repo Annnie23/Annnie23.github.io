@@ -67,6 +67,7 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     margin-top: -65px;
+  
   }
 
   .hero-image .hero-text{
@@ -123,7 +124,7 @@ nav a:hover{
   }
   
   .column h1{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 400;
   }
  
@@ -716,20 +717,17 @@ input[type=submit]:hover{
 
  /* Kontakt formular */
 
-
- /* Style inputs with type="text", select elements and textareas */
 input[type=tekst], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
+  width: 100%; 
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical 
 }
 
-/* Style the submit button with a specific background color etc */
 input[type=send] {
   background-color: #5B7523;
   color: white;
@@ -740,12 +738,10 @@ input[type=send] {
   justify-content: center;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=send]:hover {
   background-color: #5B7523;
 }
 
-/* Add a background color and some padding around the form */
 .container-kontakt {
   border-radius: 5px;
   background-color: #FAEBDC;
@@ -782,3 +778,41 @@ form[action=action_page]{
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+ 
+
+  .row{
+    width: 100%;
+  }
+  .row h1{
+    font-size: 15px;
+  }
+  .row p{
+    font-size: 10px;
+  }
+
+  .hero-text h1{
+   font-size: 15px ;
+  }
+
+}
+
+@media only screen and (max-width: 1058px){
+
+  .hero-image{
+    margin-top: -250px;
+  }
+
+  .hero-text {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
