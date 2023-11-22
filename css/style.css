@@ -293,11 +293,10 @@ nav li{
 .who{
   display: flex;
   justify-content: center;
-  margin: auto;
+  margin: 40px;
 }
 
 .col-6.hvem{
-  /* padding: 120px 100px; */
   margin: 40px;
 }
 
@@ -400,7 +399,7 @@ nav li{
 .col-7{
   background-color: #5B7523;
   color: #FAEBDC;
-  padding: 100px 40px 20px 40px;
+  padding: 35px 40px 20px 40px;
   margin: 0px ;
   text-align: center;
   flex-direction: column;
@@ -412,6 +411,7 @@ form{
 
 .newsletter{
   padding: 20px;
+  padding-bottom: 50px;
   background-color: #5B7523;
 }
 
@@ -539,11 +539,12 @@ input[type=submit]:hover{
 
 .hero-hest-text{
   color: #FAEBDC;
-  text-align: center;  
+  text-align: center;
+  margin-top: 100px;  
 }
 
 .hero-hest-text h1{
-  font-size: 60px;
+  font-size: 30px;
   font-weight: 400;
 }
 
@@ -563,19 +564,17 @@ input[type=submit]:hover{
  }
  
  .image-born img{
-   width: 700px;
-   height: 500px;
+   width: auto;
+   height: auto;
  }
  
  .text-born{
- padding-left: 40px;
- padding-right: 0px;
  color: #707070;
  margin: 40px;
  }
 
  .text-born h1{
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 400;
  }
 
@@ -610,7 +609,6 @@ input[type=submit]:hover{
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
-    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -626,7 +624,7 @@ input[type=submit]:hover{
 }
 
 .hero-blade-text h1{
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 400;
 }
 
@@ -647,16 +645,9 @@ input[type=submit]:hover{
   position: relative;
  }
  
- .image-kvinde img{
-
-   width: auto;
-   height: auto;
- }
- 
  .text-kvinde{
-
- padding-left: 40px;
- padding-right: 0px;
+ /* padding-left: 40px;
+ padding-right: 0px; */
  color: #707070;
  margin: 40px;
  }
@@ -687,9 +678,62 @@ input[type=submit]:hover{
  }
 
 
+ /* Hvem er vi  */
+
+ .column2{
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-top: 40px;
+}
+
+.card2{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.container2{
+  padding: 0 16px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #707070;
+}
+
+.container2 h2{
+  color: #5B7523;
+}
+
+.container2::after, .row2::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title{
+  color: #E26957;
+}
+
+.button2{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #FAEBDC;
+  background-color: #5B7523;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button2:hover{
+  background-color: #5B7523;
+  opacity: 0.7;
+}
+
  /* Kontakt formular */
 
-input[type=tekst], select, textarea {
+input[type=tekst], select, textarea{
   width: 100%; 
   padding: 12px;
   border: 1px solid #ccc;
@@ -700,7 +744,7 @@ input[type=tekst], select, textarea {
   resize: vertical 
 }
 
-input[type=send] {
+input[type=send]{
   background-color: #5B7523;
   color: white;
   padding: 12px 20px;
@@ -710,11 +754,12 @@ input[type=send] {
   justify-content: center;
 }
 
-input[type=send]:hover {
+input[type=send]:hover{
   background-color: #5B7523;
+  opacity: 0.7;
 }
 
-.container-kontakt {
+.container-kontakt{
   border-radius: 5px;
   background-color: #FAEBDC;
   padding: 20px;
@@ -760,6 +805,22 @@ form[action=action_page]{
 
 @media only screen and (max-width: 700px) {
 
+  .container-nature{
+    flex-wrap: wrap;
+  }
+
+  .container-born{
+    flex-wrap: wrap;
+  }
+
+
+  .who{
+    flex-wrap: wrap;
+  }
+
+  .column2 {
+    width: 100%;
+    display: block;
+  }
 
 }
-
